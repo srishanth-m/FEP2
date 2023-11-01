@@ -7,6 +7,11 @@
     font-family:'Roboto', sans-serif;
 }
 
+*::selection{
+    color: white;
+    background-color: black;
+}
+
 html , body{
     height: 100%;
     width: 100%;
@@ -80,6 +85,11 @@ html , body{
     color: transparent;
     -webkit-text-stroke: .1px rgb(127, 127, 127);
     font-size: 5.5vw;
+}
+
+.headings h1:hover{
+    color: black;
+    -webkit-text-stroke: black;
 }
 
 #homelast p{
@@ -162,4 +172,78 @@ html , body{
 .elem h4{
     opacity: .6;
     font-size: 1.25vw;
+}
+
+.btn{
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button{
+    padding: 1vw 2vw;
+    font-size: 1.3vw;
+    border: 2px solid rgb(216, 216, 216);
+    background-color: white;
+    border-radius: 100px;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+
+#dev{
+    width: 100%;
+    padding: 6vw 17vw;
+}
+
+#dev h1{
+    font-size: 3.8vw;
+    font-weight: 400;
+    width: 60%;
+    line-height: 1;
+}
+
+#dev p{
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    width: 70%;
+    line-height: 1.3;
+}
+
+#slide{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 10vw;
+}
+
+.slides{
+    width: 30%;
+}
+
+.slides .img{
+    width: 100%;
+    height: 200px;
+    background-color: yellow;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slides .tag{
+    margin: 1.5vw 1vw;
+    background-color: #dadada;
+    padding: 10px 22px;
+    width: fit-content;
+    border-radius: 50px;
+    color: black;
+}
+
+.slides h3{
+    font-size: 1.3vw;
+    font-weight: 600;
 }
